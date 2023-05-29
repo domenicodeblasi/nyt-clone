@@ -3,19 +3,22 @@ import { Routes, Route } from "react-router-dom"
 import Header from "./components/Header"
 import Home from "./pages/Home"
 import Bookmarks from "./pages/Bookmarks"
-import { ContextProvider } from "./Context"
+import { ScreenContextProvider } from "./context/ScreenContext"
+import { CarouselContextProvider } from "./context/CarouselContext"
 
 function App() {
   return (
-    <ContextProvider>
-      <Header />
-      <main className="flex justify-center w-screen">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/bookmarks" element={<Bookmarks />} />
-        </Routes>
-      </main>
-    </ContextProvider>
+    <ScreenContextProvider>
+      <CarouselContextProvider>
+        <Header />
+        <main className="flex justify-center w-[100dvw]">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/bookmarks" element={<Bookmarks />} />
+          </Routes>
+        </main>
+      </CarouselContextProvider>
+    </ScreenContextProvider>
   );
 }
 

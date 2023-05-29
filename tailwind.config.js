@@ -7,7 +7,9 @@ module.exports = {
     extend: {
       fontFamily: {
         "spectral": ["Spectral", "serif"],
-        "source-sans": ["Source Sans Pro", "sans-serif"]
+        "source-sans": ["Source Sans Pro", "sans-serif"],
+        "instrument": ["Instrument Serif", "serif"],
+        "antic-didone": ["Antic Didone", "serif"],
       },
     },
   },

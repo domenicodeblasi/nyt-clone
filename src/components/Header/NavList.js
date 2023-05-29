@@ -2,8 +2,8 @@ import React from "react"
 
 const NavList = () => {
     return (
-        <div className=" relative py-[10px] w-full text-xs border-b border-black after:w-full after:h-[1px] after:bg-black after:absolute after:-bottom-1">
-            <ul className="flex justify-around">
+        <div className="relative py-[10px] w-full text-xs border-b border-black after:w-full after:h-[1px] after:bg-black after:absolute after:-bottom-1">
+            <ul className="flex justify-around px-10">
                 <li>World</li>
                 <li>U.S.</li>
                 <li>Politics</li>
@@ -20,9 +20,9 @@ const NavList = () => {
                 <li>Travel</li>
                 <li>Magazine</li>
                 <li>Real Estate</li>
-                <li>Cooking</li>
-                <li>The Athletic</li>
-                <li>Wirecutter</li>
+                <li>Movies</li>
+                <li>Well</li>
+                <li>Headway</li>
                 <li>Games</li>
             </ul>
         </div>

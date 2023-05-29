@@ -1,14 +1,14 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
-import { useBreakpoints } from "../Context"
+import { useScreen } from "../../hooks/useScreen"
 import { Bars3Icon as Hamburger, BookmarkIcon, MagnifyingGlassIcon as SearchIcon } from "@heroicons/react/24/solid"
-import SearchBar from "./ui/SearchBar"
-import NYTLogo from "./../assets/imgs/ny-times-logo.svg"
+import SearchBar from "../ui/SearchBar"
+import NYTLogo from "./../../assets/imgs/ny-times-logo.svg"
 import NavList from "./NavList"
 
 const Navbar = ({ currentDate }) => {
 
-    const { screenWidth, lg } = useBreakpoints()
+    const { screenWidth, lg } = useScreen()
     const [isSearchBarShown, setIsSearchBarShown] = useState(false)
 
     return (

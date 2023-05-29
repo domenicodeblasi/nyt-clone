@@ -1,14 +1,12 @@
-import React, { useState, useEffect, useContext } from "react"
+import React, { useState, useEffect, createContext } from "react"
 
-const BreakpointsContext = React.createContext()
+export const ScreenContext = createContext()
 
-export const useBreakpoints = () => {
-    return useContext(BreakpointsContext)
-}
-
-export const ContextProvider = ({ children }) => {
+export const ScreenContextProvider = ({ children }) => {
 
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+    const sm = 640
+    const md = 768
     const lg = 1024
     const xl = 1280
 
@@ -24,8 +22,8 @@ export const ContextProvider = ({ children }) => {
     })
 
     return (
-        <BreakpointsContext.Provider value={{screenWidth, lg, xl}}>
+        <ScreenContext.Provider value={{screenWidth, sm, md, lg, xl}}>
             {children}
-        </BreakpointsContext.Provider>
+        </ScreenContext.Provider>
     )
 }
