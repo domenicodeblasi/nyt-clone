@@ -13,7 +13,7 @@ function App() {
       <DataContextProvider>
         <CarouselContextProvider>
           <Header />
-          <main className="flex justify-center w-[100dvw]">
+          <main className="flex justify-center w-[100dvw] scroll-smooth">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/bookmarks" element={<Bookmarks />} />

@@ -15,12 +15,15 @@ const ACTIONS = {
     FETCH_LOADING: "FETCH_LOADING",
     FETCH_SUCCESS: "FETCH_SUCCESS",
     FETCH_ERROR: "FETCH_ERROR",
-    TOGGLE_BOOKMARK: "TOGGLE_BOOKMARK"
+    TOGGLE_BOOKMARK: "TOGGLE_BOOKMARK",
+    ADD_TO_BOOKMARKS: "ADD_TO_BOOKMARKS",
+    REMOVE_FROM_BOOKMARKS: "REMOVE_FROM_BOOKMARKS",
 }
 
 const initialState = {
     loading: false,
     error: "",
+    bookmarks: [],
     success: {
         mainNews: [],
         opinion: [],
@@ -50,18 +53,41 @@ const reducer = (data, action) => {
                 error: "An error occurred, please wait a moment and try to refresh the page"
             }
         case ACTIONS.TOGGLE_BOOKMARK:
-            return {
-                ...data,
-                success: {
-                    ...data.success,
-                    [action.payload.category]: data.success[action.payload.category].map(news => {
-                        if (news.id === action.payload.id) {
-                            return {
-                                ...news,
-                                bookmark: !news.bookmark,
+            // single news to update (OBJECT)
+            const newsToUpdate = data.success[action.payload.category].find(
+                singleNewsObj => singleNewsObj.id === action.payload.id
+            )
+
+            // if the news object I've searched (in SUCCESS) exist,
+            // then I have to check (in BOOKMARKS) if that news object is already there
+            if (newsToUpdate) {
+                const isBookmarked = data.bookmarks.some(
+                    singleNewsObj => singleNewsObj.id === newsToUpdate.id
+                )
+            
+
+                // if newsToUpdate is bookmarked (isBookmarked -> true), then I have to remove it from bookmarks,
+                // but if newsToUpdate isn't bookmarked (isBookmarked -> false), then I have to add newsToUpdate to bookmarks
+                const updatedBookmarks = isBookmarked
+                    ? data.bookmarks.filter(bookmarkedNews => bookmarkedNews.id !== newsToUpdate.id)
+                    : [...data.bookmarks, newsToUpdate]
+
+                return {
+                    ...data,
+                    bookmarks: updatedBookmarks,
+                    success: {
+                        ...data.success,
+                        [action.payload.category]: data.success[action.payload.category].map(singleNewsObj => {
+                            if (singleNewsObj.id === action.payload.id) {
+                                return {
+                                    ...newsToUpdate,
+                                    bookmark: !singleNewsObj.bookmark,
+                                }
+                            } else {
+                                return singleNewsObj
                             }
-                        } else return news
-                    })
+                        }),
+                    }
                 }
             }
         default:

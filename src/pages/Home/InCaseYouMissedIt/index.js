@@ -18,9 +18,9 @@ const InCaseYouMissedIt = () => {
             <h3 className="font-instrument italic">Top picks from The Times, recommended for you</h3>
 
             {/* FIRST BLOCK */}
-            <div className="relative md:flex md:border-b md:border-gray-400 md:gap-4 lg:gap-0 lg:flex-col lg:border-0">
+            <div className="relative md:flex md:border-b md:border-gray-300 md:gap-4 lg:gap-0 lg:flex-col lg:border-0">
                 {(screenWidth >= md & screenWidth < lg) ? (
-                    <div className="absolute bg-gray-400 w-[1px] h-[80%] top-[10%] left-[50%]"></div>
+                    <div className="absolute bg-gray-300 w-[1px] h-[80%] top-[10%] left-[50%]"></div>
                 ) : null}
                 {firstPopularNewsSection.map(news => {
                     const { id } = news
@@ -30,9 +30,9 @@ const InCaseYouMissedIt = () => {
 
 
             {/* SECOND BLOCK */}
-            <div className="relative md:flex md:border-b md:border-gray-400 md:gap-4 lg:gap-0 lg:flex-col lg:border-0">
+            <div className="relative md:flex md:border-b md:border-gray-300 md:gap-4 lg:gap-0 lg:flex-col lg:border-0">
                 {(screenWidth >= md & screenWidth < lg) ? (
-                    <div className="absolute bg-gray-400 w-[1px] h-[80%] top-[10%] left-[50%]"></div>
+                    <div className="absolute bg-gray-300 w-[1px] h-[80%] top-[10%] left-[50%]"></div>
                 ) : null}
                 {secondPopularNewsSection.map(news => {
                     const { id } = news
@@ -44,7 +44,7 @@ const InCaseYouMissedIt = () => {
             {/* THIRD BLOCK */}
             <div className="relative md:gap-4 lg:gap-0 md:flex lg:flex-col lg:border-0 group">
                 {(screenWidth >= md & screenWidth < lg) ? (
-                    <div className="absolute bg-gray-400 w-[1px] h-[80%] top-[10%] left-[50%]"></div>
+                    <div className="absolute bg-gray-300 w-[1px] h-[80%] top-[10%] left-[50%]"></div>
                 ) : null}
                 {thirdPopularNewsSection.map(news => {
                     const { id } = news

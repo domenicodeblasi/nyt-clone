@@ -5,7 +5,7 @@ const PopularNewsItem = ({ news }) => {
 
     return (
         <a className="cursor-pointer w-full" href={url} title={title}>
-            <section className="relative flex justify-between items-start h-fit w-full py-4 border-b border-gray-400  md:border-0 lg:max-w-full lg:border-b lg:border-gray-400">
+            <section className="relative flex justify-between items-start h-fit w-full py-4 border-b border-gray-300 md:border-0 lg:max-w-full lg:border-b lg:border-gray-300">
                 <h3 className={`font-spectral font-bold ${media[0] ? "max-w-[70%]" : "max-w-full"}`}>{title}</h3>
                 {media[0] && (
                     <img
