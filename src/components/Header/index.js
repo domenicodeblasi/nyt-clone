@@ -8,7 +8,7 @@ import DateSection from "./DateSection"
 const Header = () => {
     const { screenWidth, lg } = useScreen()
     return (
-        <header className="flex flex-col items-center w-screen">
+        <header className="relative flex flex-col items-center w-screen">
             <Navbar currentDate={getCurrentDate()} />
             {screenWidth < lg && <DateSection currentDate={getCurrentDate()} />}
         </header>

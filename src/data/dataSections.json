@@ -1,0 +1,494 @@
+[
+    {
+        "id": 1,
+        "title": "World",
+        "url": "https://www.nytimes.com/section/world",
+        "subcategories": [
+            {
+                "id": 1.01,
+                "title": "Africa",
+                "url": "https://www.nytimes.com/section/world/africa"
+            },
+            {
+                "id": 1.02,
+                "title": "Australia",
+                "url": "https://www.nytimes.com/section/world/australia"
+            },
+            {
+                "id": 1.03,
+                "title": "Americas",
+                "url": "https://www.nytimes.com/section/world/americas"
+            },
+            {
+                "id": 1.04,
+                "title": "Asia Pacific",
+                "url": "https://www.nytimes.com/section/world/asia"
+            },
+            {
+                "id": 1.05,
+                "title": "Canada",
+                "url": "https://www.nytimes.com/section/world/canada"
+            },
+            {
+                "id": 1.06,
+                "title": "Europe",
+                "url": "https://www.nytimes.com/section/world/europe"
+            },
+            {
+                "id": 1.07,
+                "title": "Middle East",
+                "url": "https://www.nytimes.com/section/world/middleeast"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "U.S.",
+        "url": "https://www.nytimes.com/section/us",
+        "subcategories": [
+            {
+                "id": 2.01,
+                "title": "Education",
+                "url": "https://www.nytimes.com/section/education"
+            },
+            {
+                "id": 2.02,
+                "title": "California Today",
+                "url": "https://www.nytimes.com/column/california-today"
+            },
+            {
+                "id": 2.03,
+                "title": "Race/Related",
+                "url": "https://www.nytimes.com/spotlight/race"
+            },
+            {
+                "id": 2.04,
+                "title": "Wildfire Tracker",
+                "url": "https://www.nytimes.com/interactive/2022/us/fire-tracker-maps.html"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Politics",
+        "url": "https://www.nytimes.com/section/politics",
+        "subcategories": [
+            {
+                "id": 3.01,
+                "title": "President Biden",
+                "url": "https://www.nytimes.com/spotlight/joe-biden"
+            },
+            {
+                "id": 3.02,
+                "title": "Supreme Court",
+                "url": "https://www.nytimes.com/topic/organization/us-supreme-court"
+            },
+            {
+                "id": 3.03,
+                "title": "Congress",
+                "url": "https://www.nytimes.com/topic/organization/us-congress"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "N.Y.",
+        "url": "https://www.nytimes.com/section/nyregion",
+        "subcategories": [
+            {
+                "id": 4.01,
+                "title": "Eric Adams",
+                "url": "https://www.nytimes.com/spotlight/eric-adams-mayor-nyc"
+            },
+            {
+                "id": 4.02,
+                "title": "Kathy Hochul",
+                "url": "https://www.nytimes.com/spotlight/kathy-hochul"
+            },
+            {
+                "id": 4.03,
+                "title": "Big City",
+                "url": "https://www.nytimes.com/column/big-city"
+            },
+            {
+                "id": 4.04,
+                "title": "Metropolitan Diary",
+                "url": "https://www.nytimes.com/column/metropolitan-diary"
+            },
+            {
+                "id": 4.05,
+                "title": "Sunday Routine",
+                "url": "https://www.nytimes.com/column/sunday-routine"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Business",
+        "url": "https://www.nytimes.com/section/business",
+        "subcategories": [
+            {
+                "id": 5.01,
+                "title": "DealBook",
+                "url": "https://www.nytimes.com/section/business/dealbook"
+            },
+            {
+                "id": 5.02,
+                "title": "Economy",
+                "url": "https://www.nytimes.com/section/business/economy"
+            },
+            {
+                "id": 5.03,
+                "title": "Energy",
+                "url": "https://www.nytimes.com/section/business/energy-environment"
+            },
+            {
+                "id": 5.04,
+                "title": "Markets",
+                "url": "https://www.nytimes.com/section/markets-overview"
+            },
+            {
+                "id": 5.05,
+                "title": "Media",
+                "url": "https://www.nytimes.com/section/business/media"
+            },
+            {
+                "id": 5.06,
+                "title": "Small Business",
+                "url": "https://www.nytimes.com/section/business/small-business"
+            },
+            {
+                "id": 5.07,
+                "title": "Your Money",
+                "url": "https://www.nytimes.com/section/your-money"
+            },
+            {
+                "id": 5.08,
+                "title": "Automotive",
+                "url": "https://www.nytimes.com/section/automobiles"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Opinion",
+        "url": "https://www.nytimes.com/section/opinion",
+        "subcategories": [
+            {
+                "id": 6.01,
+                "title": "Columnists",
+                "url": "https://www.nytimes.com/section/opinion/columnists"
+            },
+            {
+                "id": 6.02,
+                "title": "Editorials",
+                "url": "https://www.nytimes.com/section/opinion/editorials"
+            },
+            {
+                "id": 6.03,
+                "title": "Guest Essays",
+                "url": "https://www.nytimes.com/section/opinion/contributors"
+            },
+            {
+                "id": 6.04,
+                "title": "Letters",
+                "url": "https://www.nytimes.com/section/opinion/letters"
+            },
+            {
+                "id": 6.05,
+                "title": "Sunday Opinion",
+                "url": "https://www.nytimes.com/section/opinion/sunday"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Science",
+        "url": "https://www.nytimes.com/section/science",
+        "subcategories": [
+            {
+                "id": 7.01,
+                "title": "Climate & Environment",
+                "url": "https://www.nytimes.com/section/climate"
+            },
+            {
+                "id": 7.02,
+                "title": "Space & Astronomy",
+                "url": "https://www.nytimes.com/section/science/space"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Health",
+        "url": "https://www.nytimes.com/section/health",
+        "subcategories": [
+            {
+                "id": 8.01,
+                "title": "Money & Policy",
+                "url": "https://www.nytimes.com/section/health/policy"
+            },
+            {
+                "id": 8.02,
+                "title": "Health Guide",
+                "url": "https://www.nytimes.com/section/well"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "title": "Sports",
+        "url": "https://www.nytimes.com/section/sports",
+        "subcategories": [
+            {
+                "id": 9.01,
+                "title": "MLB",
+                "url": "https://www.nytimes.com/section/sports/baseball"
+            },
+            {
+                "id": 9.02,
+                "title": "NBA",
+                "url": "https://www.nytimes.com/section/sports/basketball"
+            },
+            {
+                "id": 9.03,
+                "title": "NFL",
+                "url": "https://www.nytimes.com/section/sports/football"
+            },
+            {
+                "id": 9.04,
+                "title": "NHL",
+                "url": "https://www.nytimes.com/section/sports/hockey"
+            },
+            {
+                "id": 9.05,
+                "title": "NCAA Basketball",
+                "url": "https://www.nytimes.com/section/sports/ncaabasketball"
+            },
+            {
+                "id": 9.06,
+                "title": "NCAA Football",
+                "url": "https://www.nytimes.com/section/sports/ncaafootball"
+            },
+            {
+                "id": 9.07,
+                "title": "Golf",
+                "url": "https://www.nytimes.com/section/sports/golf"
+            },
+            {
+                "id": 9.08,
+                "title": "Soccer",
+                "url": "https://www.nytimes.com/section/sports/soccer"
+            },
+            {
+                "id": 9.09,
+                "title": "Tennis",
+                "url": "https://www.nytimes.com/section/sports/tennis"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "title": "Arts",
+        "url": "https://www.nytimes.com/section/arts",
+        "subcategories": [
+            {
+                "id": 10.01,
+                "title": "Art & Design",
+                "url": "https://www.nytimes.com/section/arts/design"
+            },
+            {
+                "id": 10.02,
+                "title": "Dance",
+                "url": "https://www.nytimes.com/section/arts/dance"
+            },
+            {
+                "id": 10.03,
+                "title": "Movies",
+                "url": "https://www.nytimes.com/section/movies"
+            },
+            {
+                "id": 10.04,
+                "title": "Music",
+                "url": "https://www.nytimes.com/section/arts/music"
+            },
+            {
+                "id": 10.05,
+                "title": "Pop Culture",
+                "url": "https://www.nytimes.com/spotlight/pop-culture"
+            },
+            {
+                "id": 10.06,
+                "title": "Television",
+                "url": "https://www.nytimes.com/section/arts/television"
+            },
+            {
+                "id": 10.07,
+                "title": "Theater",
+                "url": "https://www.nytimes.com/section/theater"
+            },
+            {
+                "id": 10.08,
+                "title": "What to Watch",
+                "url": "https://www.nytimes.com/spotlight/what-to-watch"
+            },
+            {
+                "id": 10.09,
+                "title": "Awards Season",
+                "url": "https://www.nytimes.com/news-event/awards-season"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "title": "Book Review",
+        "url": "https://www.nytimes.com/section/books/review",
+        "subcategories": [
+            {
+                "id": 11.01,
+                "title": "What to Read",
+                "url": "https://www.nytimes.com/spotlight/books-to-read"
+            },
+            {
+                "id": 11.02,
+                "title": "Staff Critics",
+                "url": "https://www.nytimes.com/column/books-of-the-times"
+            },
+            {
+                "id": 11.03,
+                "title": "Best Sellers",
+                "url": "https://www.nytimes.com/books/best-sellers/"
+            },
+            {
+                "id": 11.04,
+                "title": "By the Book",
+                "url": "https://www.nytimes.com/column/by-the-book"
+            },
+            {
+                "id": 11.05,
+                "title": "Book Review Podcast",
+                "url": "https://www.nytimes.com/column/book-review-podcast"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "title": "Style",
+        "url": "https://www.nytimes.com/section/style",
+        "subcategories": [
+            {
+                "id": 12.01,
+                "title": "Fashion",
+                "url": "https://www.nytimes.com/section/fashion"
+            },
+            {
+                "id": 12.02,
+                "title": "Men's Style",
+                "url": "https://www.nytimes.com/section/fashion/mens-style"
+            },
+            {
+                "id": 12.03,
+                "title": "On the Runway",
+                "url": "https://www.nytimes.com/column/on-the-runway"
+            },
+            {
+                "id": 12.04,
+                "title": "Love",
+                "url": "https://www.nytimes.com/section/fashion/weddings"
+            },
+            {
+                "id": 12.05,
+                "title": "Self-Care",
+                "url": "https://www.nytimes.com/section/style/self-care"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "title": "Food",
+        "url": "https://www.nytimes.com/section/food",
+        "subcategories": [
+            {
+                "id": 13.01,
+                "title": "NYT Cooking",
+                "url": "https://cooking.nytimes.com/"
+            },
+            {
+                "id": 13.02,
+                "title": "Restaurant Search",
+                "url": "https://www.nytimes.com/reviews/dining"
+            },
+            {
+                "id": 13.03,
+                "title": "Wine, Beer & Cocktails",
+                "url": "https://www.nytimes.com/section/food/drinks"
+            },
+            {
+                "id": 13.04,
+                "title": "What to Cook",
+                "url": "https://www.nytimes.com/column/what-to-cook"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "title": "Travel",
+        "url": "https://www.nytimes.com/section/travel",
+        "subcategories": []
+    },
+    {
+        "id": 15,
+        "title": "Magazine",
+        "url": "https://www.nytimes.com/section/magazine",
+        "subcategories": []
+    },
+    {
+        "id": 16,
+        "title": "Real Estate",
+        "url": "https://www.nytimes.com/section/realestate",
+        "subcategories": [
+            {
+                "id": 16.01,
+                "title": "On the Market",
+                "url": "https://www.nytimes.com/column/on-the-market"
+            },
+            {
+                "id": 16.02,
+                "title": "Mortgage Calculator",
+                "url": "https://www.nytimes.com/section/realestate/mortgage-calculator"
+            },
+            {
+                "id": 16.03,
+                "title": "Living In",
+                "url": "https://www.nytimes.com/column/living-in"
+            },
+            {
+                "id": 16.04,
+                "title": "The Hunt",
+                "url": "https://www.nytimes.com/column/the-hunt"
+            },
+            {
+                "id": 16.05,
+                "title": "The High End",
+                "url": "https://www.nytimes.com/section/realestate/the-high-end"
+            },
+            {
+                "id": 16.06,
+                "title": "What You Get",
+                "url": "https://www.nytimes.com/column/property-values"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "title": "Headway",
+        "url": "https://www.nytimes.com/section/headway",
+        "subcategories": []
+    },
+    {
+        "id": 18,
+        "title": "Games",
+        "url": "https://www.nytimes.com/crosswords",
+        "subcategories": []
+    }
+]

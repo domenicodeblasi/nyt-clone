@@ -1,29 +1,20 @@
 import React from "react"
+import data from "./../../data/dataSections.json"
 
 const NavList = () => {
     return (
         <div className="relative py-[10px] w-full text-xs border-b border-black after:w-full after:h-[1px] after:bg-black after:absolute after:-bottom-1">
             <ul className="flex justify-around px-10">
-                <li>World</li>
-                <li>U.S.</li>
-                <li>Politics</li>
-                <li>N.Y.</li>
-                <li>Business</li>
-                <li>Opinion</li>
-                <li>Science</li>
-                <li>Health</li>
-                <li>Sports</li>
-                <li>Arts</li>
-                <li>Books</li>
-                <li>Style</li>
-                <li>Food</li>
-                <li>Travel</li>
-                <li>Magazine</li>
-                <li>Real Estate</li>
-                <li>Movies</li>
-                <li>Well</li>
-                <li>Headway</li>
-                <li>Games</li>
+                {data.map(item => {
+                    const { id, title, url } = item
+                    return (
+                        <li key={id}>
+                            <a href={url} title={title}>
+                                {title}
+                            </a>
+                        </li>
+                    )
+                })}
             </ul>
         </div>
     )
