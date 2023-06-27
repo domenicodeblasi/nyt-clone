@@ -10,7 +10,6 @@ const HamburgerMenu = ({ toggleHamburgerMenu }) => {
     const [subMenu, setSubMenu] = useState({})
 
     const handleMouseEnterMenu = (e, item) => {
-        console.log(e.target.tagName, "enter")
         if (item.subcategories.length > 0) {
             setSubMenuIsShown(true)
             setSubMenu(item)
@@ -20,7 +19,6 @@ const HamburgerMenu = ({ toggleHamburgerMenu }) => {
     }
 
     const handleMouseLeaveSubmenu = (e) => {
-        console.log(e.target.tagName, "leave")
         if (e.target.tagName === "DIV" || e.target.tagName === "UL") {
             setSubMenuIsShown(false)
         } else setSubMenuIsShown(true)

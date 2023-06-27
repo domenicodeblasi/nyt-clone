@@ -64,7 +64,7 @@ const reducer = (data, action) => {
                 const isBookmarked = data.bookmarks.some(
                     singleNewsObj => singleNewsObj.id === newsToUpdate.id
                 )
-            
+
 
                 // if newsToUpdate is bookmarked (isBookmarked -> true), then I have to remove it from bookmarks,
                 // but if newsToUpdate isn't bookmarked (isBookmarked -> false), then I have to add newsToUpdate to bookmarks
@@ -103,11 +103,47 @@ export const DataContextProvider = ({ children }) => {
         const getData = async () => {
             dispatch({ type: ACTIONS.FETCH_LOADING })
             try {
-                const responseMainNews = (await axios.get(URLS.MAIN_NEWS)).data.results
-                const responseOpinion = (await axios.get(URLS.OPINION)).data.results.slice(0, 14)
-                const responseMostPopularNews = (await axios.get(URLS.MOST_POPULAR_NEWS)).data.results.slice(0, 6)
-                const responseWell = (await axios.get(URLS.WELL)).data.results.slice(0, 5)
-                const responseMovies = (await axios.get(URLS.MOVIES)).data.results.slice(0, 5)
+                let responseMainNews = []
+                let responseOpinion = []
+                let responseMostPopularNews = []
+                let responseWell = []
+                let responseMovies = []
+
+                try {
+                    responseMainNews = (await axios.get(URLS.MAIN_NEWS)).data.results
+                } catch(err) {
+                    responseMainNews = []
+                    console.log(`${err.name} - error in fetching Main News section - ${err.message}`)
+                }
+
+                try {
+                    responseOpinion = (await axios.get(URLS.OPINION)).data.results.slice(0, 14)
+                } catch (err) {
+                    responseOpinion = []
+                    console.log(`${err.name} - error in fetching Opinion section - ${err.message}`)
+                }
+
+                try {
+                    responseMostPopularNews = (await axios.get(URLS.MOST_POPULAR_NEWS)).data.results.slice(0, 6)
+                } catch (err) {
+                    responseMostPopularNews = []
+                    console.log(`${err.name} - error in fetching Most Popular News section - ${err.message}`)
+                }
+
+                try {
+                    responseWell = (await axios.get(URLS.WELL)).data.results.slice(0, 5)
+                } catch (err) {
+                    responseWell = []
+                    console.log(`${err.name} - error in fetching Well section - ${err.message}`)
+                }
+
+                try {
+                    responseMovies = (await axios.get(URLS.MOVIES)).data.results.slice(0, 5)
+                } catch (err) {
+                    responseMovies = []
+                    console.log(`${err.name} - error in fetching Movies section - ${err.message}`)
+                }
+
                 dispatch({
                     type: ACTIONS.FETCH_SUCCESS, payload: {
                         mainNews: responseMainNews.map(item => {
@@ -126,11 +162,13 @@ export const DataContextProvider = ({ children }) => {
                             }
                         }),
                         mostPopularNews: responseMostPopularNews.map(item => {
-                            return {
-                                ...item,
-                                id: crypto.randomUUID(),
-                                category: "mostPopularNews"
-                            }
+                            if (responseMostPopularNews) {
+                                return {
+                                    ...item,
+                                    id: crypto.randomUUID(),
+                                    category: "mostPopularNews"
+                                }
+                            } else return
                         }),
                         well: responseWell.map(item => {
                             return {
@@ -151,7 +189,6 @@ export const DataContextProvider = ({ children }) => {
                     }
                 })
             } catch (err) {
-                console.log(err)
                 dispatch({ type: ACTIONS.FETCH_ERROR })
             }
         }

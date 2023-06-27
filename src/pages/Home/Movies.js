@@ -9,7 +9,6 @@ const Movies = () => {
     const { screenWidth, lg } = useScreen()
     const { data } = useData()
     const { movies } = data.success
-    console.log(movies)
 
     return (
         <article className="relative py-2 after:h-[2px] after:w-screen after:absolute after:bg-black after:bottom-0 after:-left-4 lg:after:w-full lg:after:left-0 lg:after:h-[1px]">
