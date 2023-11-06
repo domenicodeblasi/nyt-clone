@@ -64,4 +64,4 @@ Click the button below to try the web application:
 
 ## ⚖️ License
 
-*nextbook* is MIT licensed, see `LICENSE.md` for more information.
+*The New York Times Clone* is MIT licensed, see `LICENSE.md` for more information.
